@@ -9,7 +9,7 @@ const authController = {
       const token = generateToken(userId); 
       res.status(201).json({ token }); 
     } catch (err) { 
-      res.status(500).json({ message: 'Registration failed' }); 
+      res.status(500).json({ message: 'Registration failed' });
     } 
   }, 
   login: async (req, res) => { 
@@ -23,7 +23,7 @@ const authController = {
       const token = generateToken(user.id); 
       res.json({ token }); 
     } catch (err) { 
-      res.status(500).json({ message: 'Login failed' }); 
+      res.status(500).json({ message: 'Login failed' });
     } 
   } 
 }; 
